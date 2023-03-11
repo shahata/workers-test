@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Workers Test</title>
+  </head>
+  <body>
+    <script type="module">
+      import { run, stop } from './create.js';
+      document.getElementById('run').onclick = run;
+      document.getElementById('stop').onclick = stop;
+    </script>
+    <button id="run">Create Workers</button>
+    <button id="stop">Stop Workers</button>
+    <pre id="output"></pre>
+  </body>
+</html>
